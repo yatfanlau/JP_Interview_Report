@@ -1,3 +1,5 @@
+Part 1 Solution (Note that both the report and the code are expected to be revised for the final submission.)
+
 ### File Overview
 
 - **`common.py`**
