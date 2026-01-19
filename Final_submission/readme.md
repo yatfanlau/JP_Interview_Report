@@ -9,8 +9,8 @@ For both model, we reorganized the codebase to enhance readability and maintaina
 
 ### Risky-Debt Model
 
-- Corrected the risky-debt pricing formula in both the report and code. Previously, we followed Strebulaev’s paper, which contains an inconsistency in Equation 3.27 regarding the definition ofb′b'b′.
-- Redefined the default condition in the code: default is now only considered whenb′>0b' > 0b′>0, ensuring it's meaningful to assess default. This replaces the earlier criterion based solely on whether the continuation valueC<0C < 0C<0.
+- Corrected the risky-debt pricing formula in both the report and code. Previously, we followed Strebulaev’s paper, which contains an inconsistency in Equation 3.27 regarding the definition of $b'$.
+- Redefined the default condition in the code: default is now only considered when $b' > 0$, ensuring it's meaningful to assess default. This replaces the earlier criterion based solely on whether the continuation value $C<0$.
 - Aligned the definition of adjustment costs in the code with the description in the report.
 - Introduced explicit default and firm restart mechanisms, as described in Strebulaev.
 - Replaced heatmaps with line plots for clearer and more intuitive illustrations.
