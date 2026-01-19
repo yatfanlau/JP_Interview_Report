@@ -1,3 +1,14 @@
+## A breif summary of changes between intermediate and final submission for Part 1:
+- For basic model solver, we mainly replace some plots with more informative one. Not much difference in the solver.
+- For risky-debt model, we
+ *correct the risky-debt pricing formula both in report and codes as we follow Strebulaev's paper but their paper has inconsistency in Eq. 3.27 about the definition of b'
+ *redefine the default condition in our code such that only b'>0, there is meaning to talk about default or not. But not be simply judged by whether C<0 or not.
+ *modify the minor definition of adjustment cost such that it is aligned with our report.
+ *allow explicit default and firm restart as described in Strebulaev
+ *Use lines plots over heatmap for better visuality
+ *Some other minor changes
+
+
 ## Repository Layout
 
 ```text
@@ -29,13 +40,4 @@ Final_submission/
     └── utils_part2.py                       Some useful utils
 
 
-A breif summary of changes between intermediate and final submission for Part 1:
-- For basic model solver, we mainly replace some plots with more informative one. Not much difference in the solver.
-- For risky-debt model, we
- *correct the risky-debt pricing formula both in report and codes as we follow Strebulaev's paper but their paper has inconsistency in Eq. 3.27 about the definition of b'
- *redefine the default condition in our code such that only b'>0, there is meaning to talk about default or not. But not be simply judged by whether C<0 or not.
- *modify the minor definition of adjustment cost such that it is aligned with our report.
- *allow explicit default and firm restart as described in Strebulaev
- *Use lines plots over heatmap for better visuality
- *Some other minor changes
 
