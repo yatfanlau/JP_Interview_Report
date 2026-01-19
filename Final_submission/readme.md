@@ -1,3 +1,5 @@
+## Note that Part 1, Part 2 and Bonus Q1 are attmpted and the HMC method is included in Part for easier comparison.
+
 ## Summary of Changes for Intermediate and Final Submission (Part 1)
 
 For both model, we reorganized the codebase to enhance readability and maintainability.
