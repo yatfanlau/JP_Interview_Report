@@ -1,15 +1,20 @@
-## A breif summary of changes between intermediate and final submission for Part 1:
+## A breif summary of changes for intermediate and final submission for Part 1:
 - For basic model solver, we mainly replace some plots with more informative one. Not much difference in the solver.
+- We also reorganize the code to improve readability and maintainability. 
 - For risky-debt model, we
   - correct the risky-debt pricing formula both in report and codes as we follow Strebulaev's paper but their paper has inconsistency in Eq. 3.27 about the definition of b'
-  - redefine the default condition in our code such that only b'>0, there is meaning to talk about default or not. But not be simply judged by whether C<0 or not.
+  - redefine the default condition in our code such that only b'>0, there is meaning to talk about default or not. But not be simply judged by whether Continuation value C<0 or not.
   - modify the minor definition of adjustment cost such that it is aligned with our report.
   - allow explicit default and firm restart as described in Strebulaev
-  - Use lines plots over heatmap for better visuality
+  - Use line-plots over heatmap for more straightforward illustration
   - Some other minor changes
 
 
+## Tests
+- Run `pytest -q` and it can be shown that all tests in the two tests files would be passed for both part 1 and part 2 cdoes.
+
 ## Repository Layout
+- Run `python main_part1.py` and `python main_part2.py` for solving and estimating the model. Note that for part 2 one must run `amortized_policy.py` first to get the parametrized policy and run `data_generation.py` to get synthetic data needed before running the estimation. 
 
 ```text
 Final_submission/
