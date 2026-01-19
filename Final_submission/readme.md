@@ -1,17 +1,11 @@
-# Final Submission Overview
-
-> Replace each `TODO` with a brief description of what the file or folder does.
-
----
-
 ## Repository Layout
 
 ```text
 Final_submission/
 ├── Part_1/
-│   ├── tests/     xx
-│   ├── basic_model.py
-│   ├── basic_model_diagnostic.py
+│   ├── tests/     
+│   ├── basic_model.py                      
+│   ├── basic_model_diagnostic.py           
 │   ├── config_part1.py
 │   ├── main_part1.py
 │   ├── model_core.py
