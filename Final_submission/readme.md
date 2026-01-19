@@ -15,7 +15,7 @@
 
 ## Repository Layout
 - Run `python main_part1.py` and `python main_part2.py` for solving and estimating the model. Note that for part 2 one must run `amortized_policy.py` first to get the parametrized policy and run `data_generation.py` to get synthetic data needed before running the estimation.
-- All files outside the folder `Final_submission` are from intermediate submission.
+- All files outside the folder `Final_submission` are from intermediate submission and has not been touched after submission on 24 Nov.
 
 ```text
 Final_submission/
