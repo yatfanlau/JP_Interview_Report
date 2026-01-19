@@ -1,13 +1,20 @@
-## A breif summary of changes for intermediate and final submission for Part 1:
-- For basic model solver, we mainly replace some plots with more informative one. Not much difference in the solver.
-- We also reorganize the code to improve readability and maintainability. 
-- For risky-debt model, we
-  - correct the risky-debt pricing formula both in report and codes as we follow Strebulaev's paper before but their paper has inconsistency in Eq. 3.27 about the definition of $b'$
-  - redefine the default condition in our code such that only $b'>0$, there is meaning to talk about default or not. But not be simply judged by whether Continuation value $C<0$ or not.
-  - modify the minor definition of adjustment cost such that it is aligned with our report.
-  - allow explicit default and firm restart as described in Strebulaev
-  - Use line-plots over heatmap for more straightforward illustration
-  - Some other minor changes
+## Summary of Changes for Intermediate and Final Submission (Part 1)
+
+For both model, we reorganized the codebase to enhance readability and maintainability.
+
+### Basic Model Solver
+
+- Replaced some plots with more informative visualizations; the core solver remains largely unchanged.
+
+
+### Risky-Debt Model
+
+- Corrected the risky-debt pricing formula in both the report and code. Previously, we followed Strebulaev’s paper, which contains an inconsistency in Equation 3.27 regarding the definition ofb′b'b′.
+- Redefined the default condition in the code: default is now only considered whenb′>0b' > 0b′>0, ensuring it's meaningful to assess default. This replaces the earlier criterion based solely on whether the continuation valueC<0C < 0C<0.
+- Aligned the definition of adjustment costs in the code with the description in the report.
+- Introduced explicit default and firm restart mechanisms, as described in Strebulaev.
+- Replaced heatmaps with line plots for clearer and more intuitive illustrations.
+- Incorporated various minor improvements and refinements. 
 
 
 ## Tests
