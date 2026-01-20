@@ -1,4 +1,4 @@
-## Note that Part 1, Part 2 and Bonus Q1 are attmpted and the HMC method is included in Part for easier comparison.
+## Note that Part 1, Part 2 and Bonus Q1 are attmpted and the HMC method is included in Part 2 for easier comparison.
 
 ## Summary of Changes for Intermediate and Final Submission (Part 1)
 
