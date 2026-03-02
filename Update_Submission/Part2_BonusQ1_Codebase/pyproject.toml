@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dyninv"
+version = "0.1.0"
+description = "Dynamic investment package with TensorFlow-based training, simulation, and estimation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Yat Fan Lau" }]
+dependencies = [
+  "tensorflow>=2.14",
+  "tensorflow-probability>=0.25",
+  "pandas>=2.0"
+]
+
+[project.scripts]
+dyninv-train-policy = "dyninv.cli.train_policy:main"
+dyninv-generate-data = "dyninv.cli.generate_data:main"
+dyninv-run-smm = "dyninv.cli.run_smm:main"
+dyninv-run-gmm = "dyninv.cli.run_gmm:main"
+dyninv-run-hmc = "dyninv.cli.run_hmc:main"
+dyninv-run-all = "dyninv.cli.run_all:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+markers = [
+  "unit: fast unit tests",
+  "integration: integration tests that exercise module interactions"
+]
