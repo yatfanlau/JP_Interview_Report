@@ -9,7 +9,6 @@ panel simulation, and structural estimation (SMM, GMM, UKF-HMC).
 .
 ├─ pyproject.toml
 ├─ README.md
-├─ LICENSE
 ├─ src/
 │  └─ dyninv/
 │     ├─ __init__.py
